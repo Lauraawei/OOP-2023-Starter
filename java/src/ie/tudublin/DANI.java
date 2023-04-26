@@ -22,7 +22,7 @@ public class DANI extends PApplet {
 
 	public void setup() {
 		colorMode(HSB);
-
+         k
        
 	}
 
