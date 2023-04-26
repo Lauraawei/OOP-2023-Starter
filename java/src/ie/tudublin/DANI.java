@@ -31,8 +31,9 @@ public class DANI extends PApplet {
 	}
 
 	public class Follow {
-		private String word;
-		private int count;
+
+		String word;
+		int count;
 	
 		public Follow(String word, int count) {
 			this.word = word;
@@ -52,10 +53,25 @@ public class DANI extends PApplet {
 		}
 	}
 
+	public class Word {
 
-	public void word(){
+		String word;
+		ArrayList<Follow> follows;
 
-	}
+		public Word(String word, ArrayList<Follow> follows) {
+			this.word = word;
+			this.follows = follows;
+		}
+	
+		public String getWord() {
+			return word;
+		}
+	
+		public ArrayList<Follow> getFollows() {
+			return follows;
+		}
+
+		
 
 
 
@@ -73,6 +89,4 @@ public class DANI extends PApplet {
 
 
 }
-
-
 
