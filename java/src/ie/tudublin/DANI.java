@@ -71,9 +71,29 @@ public class DANI extends PApplet {
 			return follows;
 		}
 
-		
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(word).append(": [");
+			for (Follow follow : follows) {
+				sb.append(follow.toString()).append(", ");
+			}
+			if (!follows.isEmpty()) {
+				sb.setLength(sb.length() - 2);
+			}
+			sb.append("]");
+			return sb.toString();
+		}
 
 
+		public void loadFile() {
+
+		loadStrings("filename.txt");
+		split(line, '');
+		w.replaceAll("[^\\w\\s]","");
+		s.toLowerCase()
+
+		}
 
 	float off = 0;
 
@@ -89,4 +109,4 @@ public class DANI extends PApplet {
 
 
 }
-
+}
